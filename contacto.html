@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <h1>
+                <img src="img/logo.png" alt="logotipo de barberia Alura" />
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="caja">
+        <div class="form">
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required/>
+                <label for="correoelectronico">Correo Electronico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="nombre@dominio.com"/>
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(xx) xxxx xxxx"/>
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
+                <fieldset><!--esta etiqueta hace referencia a conjunto de datos que pertencen al mismo tema-->
+                    <legend>¿Como le gustaria que le contactemos?</legend>
+                    <label for="radio-email">
+                        <input type="radio" name="contacto" value="email" id="radio-email" />Email
+                    </label>
+                    <label for="radio-telefono">
+                        <input type="radio" name="contacto" value="telefono" id="radio-telefono" />Telefono
+                    </label>
+                    <label for="radio-wats">
+                        <input type="radio" name="contacto" value="watsapp" id="radio-wats" checked/>watsapp
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>¿En cual horario prefiere ser atendido?</legend>
+                    <select>
+                        <option >Mañana</option>
+                        <option >Tarde</option>
+                        <option >Noche</option>
+                    </select>
+                </fieldset>
+                <label class="checkbox">
+                    ¿le gustaria recibir novedades de la Barberia Alura?
+                    <input type="checkbox" checked />
+                </label>
+    
+                <input type="submit" value="Enviar Formulario" class="enviar"/>
+            </form>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h - 20h</td>
+                </tr>
+                <tr>
+                    <td>miercoles</td>
+                    <td>08h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h - 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="img/logo-blanco.png" alt="logotipo de la barberia Alura" />
+        <p class="copy">&copy copyright Barberia Alura - 2022</p>
+    </footer>
+</body>
+
+</html>
