@@ -137,6 +137,16 @@ td,th{
 }
 /* css para pagina principal */
 
+/* selectores avanzados */
+
+/* elemento > hijo :selecciona solo a los hijos de elemento */ 
+
+/* elemento + hermano : selecciona al primer hermano despues de elemento */
+
+/* elemento ~ hermano : negacion selecciona a todos los hermanos de elemento*/
+
+/* .padre hijo:not(#id){} :selecionaa todos los hijos menos al que tiene el id */
+
 .banner{
     width: 100%;
 }
@@ -206,11 +216,11 @@ font-style: italic;
 .imagen-diferenciales{
     width: 60%;
     transition: 400ms;
-    box-shadow: 8px 10px 15px 20px #000000;
+    box-shadow: 8px 10px 20px 10px #000000;
     margin-bottom: 30px;
 }
 .imagen-diferenciales:hover{
-    opacity: 0.5;
+    opacity: 0.9;
 }
 .video{
     width: 560px;
